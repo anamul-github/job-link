@@ -1,0 +1,8 @@
+.my-name {
+    font-weight: bold;
+    text-shadow: 0 0 10px #2b6cb0;
+}
+
+.my-name:hover {
+    text-decoration: underline;
+}
