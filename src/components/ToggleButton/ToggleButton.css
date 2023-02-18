@@ -1,0 +1,4 @@
+.banner-gif {
+    background-image: url(/public/banner.gif);
+    background-size: cover;
+}
