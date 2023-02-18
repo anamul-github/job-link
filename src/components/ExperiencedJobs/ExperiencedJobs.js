@@ -8,7 +8,7 @@ const ExperiencedJobs = () => {
 
     useEffect(() => {
         setLoading(true);
-        fetch('http://localhost:5000/experiencedJobs')
+        fetch('https://job-link-server.vercel.app/experiencedJobs')
             .then(res => res.json())
             .then(data => {
                 setExperiencedJobs(data);

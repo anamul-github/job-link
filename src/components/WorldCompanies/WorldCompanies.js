@@ -8,7 +8,7 @@ const WorldCompanies = () => {
 
     useEffect(() => {
         setLoading(true);
-        fetch('http://localhost:5000/worldCompanies')
+        fetch('https://job-link-server.vercel.app/worldCompanies')
             .then(res => res.json())
             .then(data => {
                 setWorldCompanies(data);

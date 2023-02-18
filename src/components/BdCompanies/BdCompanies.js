@@ -8,7 +8,7 @@ const BdCompanies = () => {
 
     useEffect(() => {
         setLoading(true);
-        fetch('http://localhost:5000/bdCompanies')
+        fetch('https://job-link-server.vercel.app/bdCompanies')
             .then(res => res.json())
             .then(data => {
                 setBdCompanies(data);
