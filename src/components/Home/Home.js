@@ -3,6 +3,7 @@ import BdCompanies from '../BdCompanies/BdCompanies';
 import ExperiencedJobs from '../ExperiencedJobs/ExperiencedJobs';
 import FresherJobs from '../FresherJobs/FresherJobs';
 import ToggleButton from '../ToggleButton/ToggleButton';
+import WorldCompanies from '../WorldCompanies/WorldCompanies';
 
 const Home = () => {
     return (
@@ -11,7 +12,7 @@ const Home = () => {
             <FresherJobs></FresherJobs>
             <ExperiencedJobs></ExperiencedJobs>
             <BdCompanies></BdCompanies>
-
+            <WorldCompanies></WorldCompanies>
         </div>
     );
 };

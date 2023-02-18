@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Loader from '../Shared/Loader/Loader';
 
-const worldCompanies = () => {
+const WorldCompanies = () => {
     const [worldCompanies, setWorldCompanies] = useState([]);
     const [loading, setLoading] = useState(false);
 
@@ -17,11 +17,11 @@ const worldCompanies = () => {
     }, []);
 
     return (
-        <div className='bg-black text-white lg:h-screen pt-10'>
+        <div className='bg-black text-white pt-10'>
             <h2 className='text-4xl font-bold text-center p-5'>Top Companies Worldwide</h2>
             {loading && <div className="flex justify-center items-center"><Loader /></div>}
             {!loading &&
-                <div className="container mx-auto px-10 pt-5 text-center my-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-10">
+                <div className="container mx-auto px-10 pt-5 text-center pb-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-10">
                     {worldCompanies.map(company =>
                         <div className="border rounded-lg shadow-lg" key={company.id}>
                             <div className="p-4 py-8">
@@ -43,4 +43,4 @@ const worldCompanies = () => {
     );
 };
 
-export default worldCompanies;
+export default WorldCompanies;

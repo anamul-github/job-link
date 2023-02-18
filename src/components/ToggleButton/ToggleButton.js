@@ -13,6 +13,7 @@ function ToggleButton({ onToggle }) {
     return (
         <div className="flex justify-center items-center h-screen banner-gif">
             <div className="bg-white rounded-lg p-6 shadow-md">
+                <h1 className="text-3xl font-bold pb-4">Find Your Dream Job</h1>
                 <div className="flex items-center">
                     <Switch
                         checked={isEnabled}

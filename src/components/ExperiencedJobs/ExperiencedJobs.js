@@ -28,7 +28,7 @@ const ExperiencedJobs = () => {
                                 <h2 className="font-bold text-xl mb-2">Position: {job.position}</h2>
                                 <p className="text-white-600">Location: {job.location}</p>
                                 <p className="text-white-600">Company Name: {job.company}</p>
-                                <Link>
+                                <Link to="/login">
                                     <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded mt-4 hover:bg-blue-700">
                                         Apply
                                     </button>
