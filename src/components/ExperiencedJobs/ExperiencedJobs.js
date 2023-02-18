@@ -17,7 +17,7 @@ const ExperiencedJobs = () => {
     }, []);
 
     return (
-        <div className='bg-green-500 text-black lg:h-screen pt-10'>
+        <div className='bg-white text-black lg:h-screen pt-10'>
             <h2 className='text-4xl font-bold text-center p-5'>Experienced Jobs</h2>
             {loading && <div className="flex justify-center items-center"><Loader /></div>}
             {!loading &&
