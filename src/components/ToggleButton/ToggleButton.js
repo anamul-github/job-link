@@ -12,6 +12,7 @@ function ToggleButton({ onToggle }) {
     return (
         <div className="flex justify-center items-center h-screen">
             <div className="bg-white rounded-lg p-6 shadow-md">
+                <img src="https://i.ibb.co/bzPbWgL/animation-500-le9d9cyz.gif" alt="" />
                 <div className="flex items-center">
                     <Switch
                         checked={isEnabled}

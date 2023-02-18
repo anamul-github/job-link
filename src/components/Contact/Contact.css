@@ -1,0 +1,6 @@
+@media only screen and (max-device-width: 640px) {
+    .contact-in-mobile {
+        width: 80%;
+        align-content: center;
+    }
+}

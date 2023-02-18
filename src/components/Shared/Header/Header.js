@@ -127,6 +127,22 @@ const Header = () => {
                         >
                             Contact Us
                         </Link>
+                        {
+                            user?.uid ?
+                                <>
+                                    <button variant="light" onClick={handleLogOut} className=' text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium'>Logout</button>
+                                </>
+                                :
+                                <>
+                                    <Link
+                                        to="/login"
+                                        className="block px-10 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
+                                        onClick={() => setShowMenu(false)}
+                                    >
+                                        Login
+                                    </Link>
+                                </>
+                        }
                     </div>
                 )}
             </div>
