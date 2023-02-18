@@ -2,21 +2,15 @@ import { GoogleAuthProvider } from 'firebase/auth';
 import React, { useContext, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthProvider/AuthProvider';
-// import useToken from '../../hooks/useToken';
 
 const Login = () => {
     const [error, setError] = useState('');
 
     const [loginUserEmail, setLoginUserEmail] = useState('');
-    // const [token] = useToken(loginUserEmail);
     const { signIn } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
     const from = location.state?.from?.pathname || '/';
-
-    // if (token) {
-    //     navigate(from, { replace: true });
-    // }
 
 
     // login with email and password
@@ -72,11 +66,11 @@ const Login = () => {
                     </label>
                     <input className="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-white-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" type="password" name='password' placeholder="" required />
                 </div>
-                <div>
+                {/* <div>
                     <button className="btn w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
                         Login
                     </button>
-                </div>
+                </div> */}
 
                 <button className="btn w-full mt-10" onClick={handleGoogleSignIn}>Login With Google</button>
                 <p className="text-center text-gray-500 text-xs">

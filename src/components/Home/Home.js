@@ -1,9 +1,12 @@
 import React from 'react';
+import FresherJobs from '../FresherJobs/FresherJobs';
+import ToggleButton from '../ToggleButton/ToggleButton';
 
 const Home = () => {
     return (
         <div>
-            <h2>This is Home</h2>
+            <ToggleButton></ToggleButton>
+            <FresherJobs></FresherJobs>
         </div>
     );
 };
